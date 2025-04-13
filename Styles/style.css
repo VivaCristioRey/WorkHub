@@ -1,12 +1,39 @@
-body{
-    box-sizing: border-box;
+header{
+    border-bottom: black 0.1px;
 }
 
-header{
-    display: flex;
-    align-items: center;
+section{
+    height: 100%;
 }
-a > img{
+
+.shadow-bottom{
+    box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+a>img {
     width: 189px;
-    height: auto;
+}
+
+.logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.btn-warning {
+    background-color: #f7933e;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e87f20;
+}
+
+.btn-outline-primary{
+    color: black;
+    border: black 1px solid;
 }
