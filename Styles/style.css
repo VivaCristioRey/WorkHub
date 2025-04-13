@@ -1,0 +1,12 @@
+body{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+a > img{
+    width: 189px;
+    height: auto;
+}
