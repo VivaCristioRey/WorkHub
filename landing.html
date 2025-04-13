@@ -13,7 +13,7 @@
 <body>
 
     <!-- Encabezado -->
-    <header class="bg-white shadow-sm">
+    <header class="shadow-sm" id="header">
         <nav class="container d-flex justify-content-between align-items-center py-3">
             <!-- Logo -->
             <div class="logo">
@@ -42,17 +42,19 @@
     <body>
 
         <!-- Sección principal -->
-        <section class="text-center py-5 shadow-bottom">
+        <section class="d-flex flex-column justify-content-center align-items-center py-5 shadow-bottom main-container-size" id="mainSect">
             <h1 class="fw-bold display-5">Conectamos talento con oportunidades</h1>
             <p class="lead mb-4">
                 WorkHub facilita el acceso a trabajos temporales en mantenimiento, limpieza y servicios auxiliares.
             </p>
 
             <!-- Barra de búsqueda -->
-            <form class="d-flex justify-content-center mb-4">
-                <input class="form-control w-50 me-2" type="search" placeholder="Buscar cargo o categoría">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+            <div class="">
+                <form class="d-flex mb-4">
+                    <input class="form-control w-200 me-2" type="search" placeholder="Buscar cargo o categoría">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
 
             <!-- Llamado a empleadores -->
             <div class="d-flex align-items-center justify-content-center">
@@ -62,70 +64,82 @@
         </section>
 
         <!-- Seccion 2 -->
-        <h1>Historias de éxitos</h1>
+        <section class="container-fluid container-size d-flex justify-content-center flex-column" id="sect2">
+            <h1 class="fw-bold text-center py-5">Historias de éxitos</h1>
 
-        <!-- cartas usuarios -->
+            <!-- cartas usuarios -->
+            <div class="d-flex flex-nowrap overflow-scroll gap-5">
 
-        <!-- Card 1 -->
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <!-- Cards -->
+                <div class="container mb-5">
+                    <div class="row g-4 d-flex flex-nowrap justify-content-center">
+
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card shadow-sm rounded-4 color-cards card-size">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">User</h5>
+                                    <p class="card-text">user comment</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card color-cards shadow-sm rounded-4 card-size">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">User</h5>
+                                    <p class="card-text">user comment</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card color-cards shadow-sm rounded-4 card-size">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">User</h5>
+                                    <p class="card-text">user comment</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-md-4">
+                            <div class="card color-cards shadow-sm rounded-4 card-size">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">User</h5>
+                                    <p class="card-text">user comment</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-md-4">
+                            <div class="card color-cards shadow-sm rounded-4 card-size">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">User</h5>
+                                    <p class="card-text">user comment</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="col-md-4">
+                            <div class="card color-cards shadow-sm rounded-4 card-size">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">User</h5>
+                                    <p class="card-text">user comment</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
+        </section>
     </body>
+
 
     <!-- Pie de pagina -->
     <footer>
