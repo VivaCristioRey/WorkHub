@@ -8,7 +8,7 @@ header{
 }
 
 a>img {
-    width: 189px;
+    width: 40px;
 }
 
 .logo h2 {
@@ -43,16 +43,16 @@ a>img {
     margin-left: 4px;
 }
 
-#header{
-    z-index: 10;
-}
-
 #mainSect{
     background-color: #E4EDF4;
 }
 
 #sect2{
     background: linear-gradient(291deg,rgba(88, 204, 230, 1) 0%, rgba(1, 59, 72, 1) 100%);
+}
+
+#succesStories{
+    color: white;
 }
 
 .color-cards{
@@ -73,4 +73,31 @@ a>img {
 .container-size{
     width: 100%;
     height: 579px;
+}
+
+.icon-size{
+    width: 48px;
+    height: 48px;
+}
+
+.info-cards{
+    width: 407px;
+    height: 176px;
+    background-color: #F4F8FB;
+    border-radius: 5px;
+    box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.4);
+}
+
+.info-size{
+    width: 100%;
+    height: 475px;
+    gap: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-color{
+    background-color: #E4EDF4;
 }

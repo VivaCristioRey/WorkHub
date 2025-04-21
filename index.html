@@ -7,18 +7,18 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
 </head>
 
 <body>
 
     <!-- Encabezado -->
     <header class="shadow-sm" id="header">
-        <nav class="container d-flex justify-content-between align-items-center py-3">
+        <nav class="container-fluid d-flex justify-content-between align-items-center py-3">
             <!-- Logo -->
             <div class="logo">
                 <a href="#">
-                    <img src="Assets/logos/Logo WorkHub.svg" alt="">
+                    <img src="Assets/img/W.png" alt="WorkHubLogo">
                 </a>
             </div>
 
@@ -38,7 +38,6 @@
     </header>
 
     <!-- Cuerpo -->
-
     <body>
 
         <!-- Sección principal -->
@@ -63,11 +62,11 @@
             </div>
         </section>
 
-        <!-- Seccion 2 -->
-        <section class="container-fluid container-size d-flex justify-content-center flex-column" id="sect2">
-            <h1 class="fw-bold text-center py-5">Historias de éxitos</h1>
+        <!-- Seccion Carrusel -->
+        <section class="container-fluid container-size flex-column" id="sect2">
+            <h1 class="fw-bold text-center py-5" id="succesStories">Historias de éxitos</h1>
 
-            <!-- cartas usuarios -->
+            <!-- Cartas Usuarios -->
             <div class="d-flex flex-nowrap overflow-scroll gap-5">
 
                 <!-- Cards -->
@@ -138,17 +137,46 @@
                 </div>
             </div>
         </section>
+
+        <!-- Sección Información -->
+         <section class="info-size info-color">
+
+            <div class="m-0 row container-fluid justify-content-center gap-5">
+                <!-- info 1 -->
+                <div class="info-cards d-flex justify-content-center align-items-center flex-column text-center">
+                <img src="Assets/icons/Clock.svg" class="icon-size" alt="iconClock">
+                    <h5>Trabajos flexibles</h5>
+                    <h6>Encuentra oportunidades que se ajusten a tu horario y habilidades.</h6>
+                </div>
+                
+                <!-- info 2 -->
+                <div class="info-cards d-flex justify-content-center align-items-center flex-column text-center">
+                    <img src="Assets/icons/Shield.svg" class="icon-size" alt="iconShield">
+                    <h5>Contratación segura</h5>
+                    <h6>Proceso de contratación rápido y seguro para empleadores.</h6>
+                </div>
+
+                <!-- info 3 -->
+                <div class="info-cards d-flex justify-content-center align-items-center flex-column text-center">
+                    <img src="Assets/icons/person.svg" class="icon-size" alt="iconPerson">
+                    <h5>Conexiones Perfectas</h5>
+                    <h6>Encuentra oportunidades que se ajusten a tu horario y habilidades.</h6>
+                </div>
+            </div>
+
+            <!-- logos -->
+             <div class="d-flex justify-content-center">
+                <img src="Assets/icons/Logos.svg" alt="">
+
+         </section>
     </body>
 
 
     <!-- Pie de pagina -->
     <footer>
-
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
