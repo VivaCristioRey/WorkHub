@@ -56,6 +56,10 @@ a>img {
     background: linear-gradient(291deg,rgba(88, 204, 230, 1) 0%, rgba(1, 59, 72, 1) 100%);
 }
 
+#workHub_Slogan{
+    width: 283px;
+}
+
 #succesStories{
     color: white;
 }
@@ -121,7 +125,7 @@ a>img {
     background-color: #F4F8FB;
 }
 
-.job-bgc{
+.bgc{
     background-color: #E4EDF4;
 }
 
@@ -139,4 +143,12 @@ a>img {
     border-radius: 5px;
     box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.2);
     color: white;
+}
+
+.footer-size{
+    height: 753px;
+}
+
+.opaque-color-text{
+    color: #707579;
 }
