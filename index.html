@@ -13,7 +13,7 @@
 <body>
 
     <!-- Encabezado -->
-    <header class="shadow-sm sticky-top" id="header">
+    <header class="shadow-sm sticky-top" id="">
         <nav class="container-fluid d-flex align-items-center justify-content-between py-3">
             <!-- Logo -->
             <div class="logo">
@@ -42,11 +42,10 @@
         </nav>
     </header>
 
-    <!-- Cuerpo -->
+    <!-- Principal -->
     <main>
         <!-- Sección principal -->
-        <section
-            class="d-flex flex-column justify-content-center align-items-center py-5 shadow-bottom main-container-size"
+        <section class="d-flex flex-column justify-content-center align-items-center pb-5 shadow-bottom main-container-size w-100"
             id="mainSect">
             <h1 class="fw-bold display-5 publicSans-Bold">Conectamos talento con oportunidades</h1>
             <p class="lead mb-4 text-center custom-width afacad-regular">
@@ -68,8 +67,8 @@
         </section>
 
         <!-- Seccion Carrusel -->
-        <section class="d-flex container-size flex-column px-3" id="sect2">
-            <h1 class="fw-bold text-center pt-5 my-5 afacad-Bold" id="succesStories">Historias de éxitos</h1>
+        <section class="d-flex container-size flex-column px-3 justify-content-center" id="sect2">
+            <h1 class="fw-bold text-center mb-5 afacad-Bold" id="succesStories">Historias de éxitos</h1>
 
             <!-- Tarjetas Usuarios -->
             <div class="d-flex flex-nowrap overflow-x-auto mt-5 overflow-y-hidden align-items-center">
@@ -142,23 +141,23 @@
             <div class="m-0 row mt-auto justify-content-center gap-5">
                 <!-- info 1 -->
                 <div class="info-cards d-flex justify-content-center align-items-center flex-column text-center">
-                    <img src="Assets/icons/Clock.svg" class="icon-size" alt="iconClock">
-                    <h5>Trabajos flexibles</h5>
-                    <h6>Encuentra oportunidades que se ajusten a tu horario y habilidades.</h6>
+                    <img src="Assets/icons/Clock.svg" class="icon-size mb-2" alt="iconClock">
+                    <h5 class="afacad-Bold text-center">Trabajos flexibles</h5>
+                    <h6 class="publicSans-Light">Encuentra oportunidades que se ajusten a tu horario y habilidades.</h6>
                 </div>
 
                 <!-- info 2 -->
                 <div class="info-cards d-flex justify-content-center align-items-center flex-column text-center">
-                    <img src="Assets/icons/Shield.svg" class="icon-size" alt="iconShield">
-                    <h5>Contratación segura</h5>
-                    <h6>Proceso de contratación rápido y seguro para empleadores.</h6>
+                    <img src="Assets/icons/Shield.svg" class="icon-size mb-2" alt="iconShield">
+                    <h5 class="afacad-Bold">Contratación segura</h5>
+                    <h6 class="publicSans-Light">Proceso de contratación rápido y seguro para empleadores.</h6>
                 </div>
 
                 <!-- info 3 -->
                 <div class="info-cards d-flex justify-content-center align-items-center flex-column text-center">
-                    <img src="Assets/icons/person.svg" class="icon-size" alt="iconPerson">
-                    <h5>Conexiones Perfectas</h5>
-                    <h6>Encuentra oportunidades que se ajusten a tu horario y habilidades.</h6>
+                    <img src="Assets/icons/person.svg" class="icon-size mb-2" alt="iconPerson">
+                    <h5 class="afacad-Bold">Conexiones Perfectas</h5>
+                    <h6 class="publicSans-Light">Encuentra oportunidades que se ajusten a tu horario y habilidades.</h6>
                 </div>
             </div>
 
@@ -191,9 +190,9 @@
                 <img src="Assets/img/upperClouds.png" class="w-100" alt="">
             </div>
             <!-- Contenido Comienza Hoy -->
-            <div class="d-flex flex-column gap-5 h-100">
-                <div class="mb-5">
-                    <h1 class="text-center text-white mb-5">
+            <div class="d-flex flex-column h-100">
+                <div class="mb-5 d-flex flex-column align-items-center">
+                    <h1 class="text-center text-white mb-5 w-50 publicSans-Bold">
                         !Sigue nuestros pasos para <span class="text-dark">maximizar</span> la experiencia de usuario!
                     </h1>
 
@@ -203,7 +202,7 @@
                         <div
                             class="start_today-card d-flex align-items-center justify-content-center flex-column gap-3">
                             <img src="Assets/icons/Click.svg" alt="crearCuenta">
-                            <h6>Crear cuenta</h6>
+                            <h6 class="afacad-Medium fs-5">Crear cuenta</h6>
                         </div>
 
 
@@ -211,21 +210,21 @@
                         <div
                             class="start_today-card d-flex align-items-center justify-content-center flex-column gap-3">
                             <img src="Assets/icons/Book.svg" alt="completaPerfil">
-                            <h6>Completa tu perfil</h6>
+                            <h6 class="afacad-Medium f-5">Completa tu perfil</h6>
                         </div>
 
                         <!-- Tarjeta 3 -->
                         <div
                             class="start_today-card d-flex align-items-center justify-content-center flex-column gap-3">
                             <img src="Assets/icons/Check.svg" alt="postulate">
-                            <h6>Postúlate a empleos</h6>
+                            <h6 class="afacad-Medium f-5">Postúlate a empleos</h6>
                         </div>
 
                         <!-- Tarjeta 4 -->
                         <div
                             class="start_today-card d-flex align-items-center justify-content-center flex-column gap-3">
                             <img src="Assets/icons/Cloud.svg" alt="actualiza">
-                            <h6>Actualiza tu perfil</h6>
+                            <h6 class="afacad-Medium f-5">Actualiza tu perfil</h6>
                         </div>
 
                     </div>
@@ -234,8 +233,9 @@
                 <!-- Comienza Hoy -->
                 <div class="d-flex align-items-center justify-content-center flex-column mt-5 position-relative h-100">
                     <img src="Assets/icons/Separator.svg" class="mb-5 position-absolute top-0 end-0" alt="">
-                    <h1 class="text-white mt-5 mb-4">Comienza hoy con WorkHub</h1>
-                    <h6 class="text-white mb-4">Ya sea que busques trabajo o necesites contratar, WorkHub tiene la
+                    <h1 class="text-white mt-5 mb-4 publicSans-Bold">Comienza hoy con WorkHub</h1>
+                    <h6 class="text-white mb-4 afacad-regular">Ya sea que busques trabajo o necesites contratar, WorkHub
+                        tiene la
                         solución
                         para ti.</h6>
                     <!-- Botones -->
@@ -259,7 +259,7 @@
 
         <!-- Redes Sociales -->
         <div class="me-5">
-            <img src="Assets/img/WorkHub_Slogan.png" id="workHub_Slogan">
+            <a href="#mainSect"><img src="Assets/img/WorkHub_Slogan.png" id="workHub_Slogan"></a>
             <div class="mt-3 d-flex justify-content-around">
                 <a href="#"><img class="" src="Assets/img/Instagram.png" alt="Instagram"></a>
                 <a href="#"><img class="" src="Assets/img/X.png" alt="X"></a>
@@ -272,24 +272,27 @@
 
             <!-- Compañía -->
             <div>
-                <h4>Compañía</h4>
+                <h4 class="afacad-Bold">Compañía</h4>
                 <div class="d-flex flex-column">
-                    <a href="#" class="text-decoration-none opaque-color-text mt-5 mb-4 ">Sobre Nosotros</a>
-                    <a href="#" class="text-decoration-none opaque-color-text mb-4 ">Contacto</a>
-                    <a href="#" class="text-decoration-none opaque-color-text mb-4 ">Afiliese</a>
-                    <a href="#" class="text-decoration-none opaque-color-text mb-4 ">Política de Privacidad</a>
-                    <a href="#" class="text-decoration-none opaque-color-text mb-4 ">Términos y Condiciones</a>
+                    <a href="#" class="text-decoration-none opaque-color-text mt-5 mb-4 afacad-Medium">Sobre
+                        Nosotros</a>
+                    <a href="#" class="text-decoration-none opaque-color-text mb-4 afacad-Medium">Contacto</a>
+                    <a href="#" class="text-decoration-none opaque-color-text mb-4 afacad-Medium">Afiliese</a>
+                    <a href="#" class="text-decoration-none opaque-color-text mb-4 afacad-Medium">Política de
+                        Privacidad</a>
+                    <a href="#" class="text-decoration-none opaque-color-text mb-4 afacad-Medium">Términos y
+                        Condiciones</a>
                 </div>
             </div>
 
             <!-- Ayuda -->
             <div>
-                <h4>Ayuda</h4>
+                <h4 class="afacad-Bold">Ayuda</h4>
                 <div class="d-flex flex-column">
-                    <a href="#" class="text-decoration-none opaque-color-text mt-5 mb-4">FAQ</a>
-                    <a href="#" class="text-decoration-none opaque-color-text mb-4">Soporte</a>
-                    <a href="#" class="text-decoration-none opaque-color-text mb-4">Comunidad</a>
-                    <a href="#" class="text-decoration-none opaque-color-text mb-4">Llámenos</a>
+                    <a href="#" class="text-decoration-none opaque-color-text mt-5 mb-4 afacad-Medium">FAQ</a>
+                    <a href="#" class="text-decoration-none opaque-color-text mb-4 afacad-Medium">Soporte</a>
+                    <a href="#" class="text-decoration-none opaque-color-text mb-4 afacad-Medium">Comunidad</a>
+                    <a href="#" class="text-decoration-none opaque-color-text mb-4 afacad-Medium">Llámenos</a>
                 </div>
             </div>
         </div>
