@@ -1,114 +1,103 @@
+@font-face{
+    font-family: 'Afacad-Regular';
+    src: url(../fonts/Afacad/static/Afacad-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Afacad-Bold';
+    src: url(../fonts/Afacad/static/Afacad-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Public-Sans';
+    src: url(../fonts/Public_Sans/static/PublicSans-Bold.ttf);
+}
+
+.afacad-Bold{
+    font-family: 'Afacad-Bold';
+}
+
+.publicSans-Bold{
+    font-family: 'Public-Sans';
+}
+
+.afacad-regular{
+    font-family: 'Afacad-Regular', sans-serif;
+}
+
+header{
+    font-family: 'Afacad-Regular', sans-serif;
+}
+
+.bgc-light{
+    background-color: #E4EDF4;
+}
+
+.bg-light-opaque,
 header{
     background-color: #F4F8FB;
 }
 
-.shadow-bottom{
-    box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.2);
-    z-index: -1;
-}
-
-a>img {
+a > img{
     width: 40px;
 }
 
-.logo h2 {
+.logo h2{
     font-size: 24px;
     font-weight: bold;
 }
 
-.nav-link:hover {
+.nav-link:hover{
     text-decoration: underline;
 }
 
-.btn-warning {
+.btn-warning{
     background-color: #F4B985;
-    border: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.btn-warning:hover {
+.btn-warning:hover{
     background-color: #e87f20;
 }
 
 .btn-outline-primary{
     color: black;
-    border: black 1px solid;
+    border: 1px solid black;
 }
 
 .btn-outline-primary:hover{
     background-color: #fff;
 }
 
-.section>div{
+.shadow-bottom{
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.section > div{
     box-sizing: content-box;
     margin-left: 4px;
 }
 
-#job>div>img{
+.custom-width{
+    width: 60ch;
+}
+
+.opaque-color-text{
+    color: #707579;
+}
+
+.orange-color-text{
+    color: #FFAA5F;
+}
+
+#job > div > img{
     width: 263px;
     height: 252px;
-}
-
-#mainSect{
-    background-color: #E4EDF4;
-}
-
-#sect2{
-    background: linear-gradient(291deg,rgba(88, 204, 230, 1) 0%, rgba(1, 59, 72, 1) 100%);
-}
-
-#workHub_Slogan{
-    width: 283px;
-}
-
-#succesStories{
-    color: white;
-}
-
-.color-cards{
-    background: rgba(0, 0, 0, 0.2);
-    color: white;
-}
-
-.card-size{
-    height: 238px;
-    width: 409px;
-}
-
-.main-container-size{
-    width: 100%;
-    height: 579px;
-}
-
-.container-size{
-    width: 100%;
-    height: 579px;
-}
-
-.icon-size{
-    width: 48px;
-    height: 48px;
-}
-
-.info-cards{
-    width: 407px;
-    height: 176px;
-    background-color: #F4F8FB;
-    border-radius: 5px;
-    box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.4);
-}
-
-.info-size{
-    width: 100%;
-    height: 475px;
-    gap: 55px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-color{
-    background-color: #E4EDF4;
 }
 
 .job-size{
@@ -125,14 +114,68 @@ a>img {
     background-color: #F4F8FB;
 }
 
+#mainSect,
+.info-color,
 .bgc{
     background-color: #E4EDF4;
+}
+
+#sect2{
+    background: linear-gradient(291deg, rgba(88, 204, 230, 1) 0%, rgba(1, 59, 72, 1) 100%);
+}
+
+#workHub_Slogan{
+    width: 283px;
+}
+
+#succesStories{
+    color: white;
+}
+
+.color-cards{
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.card-size{
+    width: 409px;
+    height: 238px;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.icon-size{
+    width: 48px;
+    height: 48px;
+}
+
+.info-cards{
+    width: 407px;
+    height: 176px;
+    background-color: #F4F8FB;
+    border-radius: 5px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.4);
+}
+
+.main-container-size,
+.container-size{
+    width: 100%;
+    height: 579px;
+}
+
+.info-size{
+    width: 100%;
+    height: 475px;
+    gap: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .start_today{
     width: 100%;
     height: 1272px;
-    background: #013B48;
     background: linear-gradient(90deg, rgba(1, 59, 72, 1) 0%, rgba(88, 204, 230, 1) 50%, rgba(255, 170, 95, 1) 100%);
 }
 
@@ -141,14 +184,10 @@ a>img {
     height: 117px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
 .footer-size{
-    height: 753px;
-}
-
-.opaque-color-text{
-    color: #707579;
+    height: 100vh;
 }
