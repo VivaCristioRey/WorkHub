@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Rubik-semiBold';
+    src: url(../fonts/Rubik/static/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Rubik-regular';
+    src: url(../fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+.rubik-regular {
+    font-family: 'Rubik-regular';
+}
+
+.rubik-semiBold {
+    font-family: 'Rubik-semiBold';
+}
+
+.ctn-main {
+    width: 611px;
+    height: 604px;
+    border-radius: 16px;
+}
+
+.ctn-body {
+    width: 385px;
+    height: 100%;
+}
+
+/* mc = Main Container */
+.mc-color {
+    background-color: #061628;
+    color: white;
+}
+
+.text-color_skyBlue {
+    color: #ABE5F2;
+    text-decoration: none;
+}
+
+/* Me tocó ponerlo así porque con la clase de Bootstrap no me funcionaba el hover */
+.pass {
+    text-decoration: none;
+}
+
+.text-color_skyBlue:hover,
+.pass:hover {
+    text-decoration: underline;
+}
+
+.btn-google {
+    height: 50px;
+    color: white;
+}
+
+.btn-google:hover {
+    color: black;
+    background-color: white;
+}
+
+.btn-logIn {
+    height: 50px;
+    background-color: #fff;
+    color: black;
+}
+
+.modal {
+    z-index: 1055 !important;
+}
+
+.modal-backdrop {
+    z-index: 1050 !important;
+}
+
+dialog {
+    background: transparent;
+    border: none;
+    padding: 0;
+}

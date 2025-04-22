@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap_css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/login.css">
 </head>
 
 <body>
@@ -34,17 +35,61 @@
 
                 <!-- Botones -->
                 <div class="ms-5">
-                    <a href="#" class="btn btn-outline-primary me-2">Registrar</a>
-                    <a href="#" class="btn btn-warning text-white border-0">Iniciar Sesión</a>
+                    <a href="#" class="btn btn-outline-primary me-2" id="register">Registrar</a>
+                    <a href="#" class="btn btn-warning text-white border-0" id="logIn">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
+
+        <!-- Modal Inicio Sesión -->
+        <dialog  id="modalLogin" closedby="any">
+            <div class="d-flex justify-content-center ctn-main mc-color">
+                <div class="d-flex align-items-center justify-content-center ctn-body flex-column px-3 rubik-regular">
+                    <h1 class="rubik-semiBold mb-5">Iniciar Sesión</h1>
+                    <!-- Información -->
+                    <form class="d-flex flex-column w-100 mb-3">
+                        <input type="email" id="emailUsr" class="form-control border-0 mb-3 border-bottom" placeholder="Email">
+                        <input type="password" id="passUsr" class="form-control border-0 border-bottom" placeholder="Contraseña">
+                    </form>
+        
+                    <!-- Recordar Contraseña -->
+                    <div class="d-flex w-100 p-0 mb-3">
+                        <h6 class="me-3 m-0">Recordar contraseña</h6>
+                        <input type="checkbox">
+                    </div>
+        
+                    <!-- Botón Iniciar Sesión -->
+                    <button class="btn-logIn fs-5 w-100 btn btn-warning border-0" id="sendLogIn">Iniciar Sesión</button>
+        
+                    <!-- O con -->
+                    <div class="d-flex my-3 w-100 align-items-center p-0">
+                        <hr class="flex-grow-1 border-secondary">
+                        <span class="mx-2 small">O CON</span>
+                        <hr class="flex-grow-1 border-secondary">
+                    </div>
+        
+                    <!-- Continuar con Google -->
+                    <div class="w-100 mb-3">
+                        <button class="btn btn-google btn-outline-primary w-100 p-0 align-items-center justify-content-center border-white d-flex">
+                            <img src="Assets/icons/Google.svg" class="me-3" alt="Google">Continuar con Google</button>
+                    </div>
+        
+                    <!-- Crear cuenta/Olvidé Contra -->
+                    <div class="d-flex justify-content-between w-100">
+                        <a href="#" class="text-color_skyBlue">Crear cuenta</a>
+                        <a href="#" class="pass text-white">Olvidé mi contraseña</a>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+
     </header>
 
     <!-- Principal -->
     <main>
         <!-- Sección principal -->
-        <section class="d-flex flex-column justify-content-center align-items-center pb-5 shadow-bottom main-container-size w-100"
+        <section
+            class="d-flex flex-column justify-content-center align-items-center pb-5 shadow-bottom main-container-size w-100"
             id="mainSect">
             <h1 class="fw-bold display-5 publicSans-Bold">Conectamos talento con oportunidades</h1>
             <p class="lead mb-4 text-center custom-width afacad-regular">
@@ -298,6 +343,7 @@
     </footer>
 
     <script src="assets/js/bootstrap_js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/js/modal.js"></script>
 </body>
 
 </html>
