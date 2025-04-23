@@ -19,5 +19,7 @@ sendData.addEventListener('click', () => {
 
     if (user === adminUser.correo && pass === adminUser.contraseña) {
         window.open('adminPanel.html', '_self')
+    } else {
+        alert('Datos inválidos')
     }
 })

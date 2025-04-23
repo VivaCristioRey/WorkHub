@@ -1,0 +1,23 @@
+.sideBar{
+    background-color: #F4F8FB;
+    width: 280px;
+    height: calc(100vh - 64px);
+}
+
+.upCards{
+    width: 231px;
+    height: 138px;
+    border-radius: 10px;
+}
+
+.upColorCard1{
+    background-color: #FBACAC;
+}
+
+.upColorCard2{
+    background-color: #FBE3CE;
+}
+
+.upColorCard3{
+    background-color: #ABE5F2;
+}

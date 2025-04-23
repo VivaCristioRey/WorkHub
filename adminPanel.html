@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/adminStyles.css">
 </head>
+
 <body>
-    
-    <header>
+
+    <header class="shadow-sm">
+        <!-- Encabezado -->
+        <nav class="navbar d-flex justify-content-between mx-3">
+            <!-- Logo -->
+            <a href="#">
+                <img src="Assets/img/W.png" alt="logoWorkHub">
+            </a>
+            <!-- Admin Usuario -->
+            <div class="d-flex align-items-center">
+                <h6 class="m-0 me-2">Santiago Duarte</h6>
+                <img class="ms-2" src="Assets/img/users/User1.png" alt="">
+            </div>
+        </nav>
     </header>
 
+    <main class="d-flex">
+        <!-- Barra lateral -->
+        <div class="sideBar d-flex align-items-center justify-content-center">
+            <ul class="afacad-regular list-unstyled m-0 py-5 d-flex h-100 justify-content-center flex-column">
+                <li class="my-4">Elementos del menú</li>
+                <li class="my-4">Tareas</li>
+                <li class="my-4">Usuario</li>
+                <li class="my-4">Mensajes</li>
+                <li class="my-4">Calendario</li>
+                <li class="my-4">Publicaciones</li>
+                <li class="my-4">Contabilidad</li>
+                <li class="my-4">Reportes</li>
+                <li class="my-4">Documentos</li>
+                <li class="my-4">Nomina</li>
+            </ul>
+        </div>
+
+        <!-- Info -->
+        <div class="position-relative">
+            <!-- Botones superiores -->
+            <div class="m-5 afacad-regular">
+                <button class="btn btn-outline-primary me-2">
+                    Publicaciones de trabajo
+                </button>
+                <button class="btn btn-outline-primary me-2">
+                    Gestionar Usuario
+                </button>
+                <button class="btn btn-outline-primary me-2">
+                    Tablero
+                </button>
+            </div>
+            <!-- Contenedor principal -->
+            <div>
+                <!-- 3 Tarjetas de Arriba -->
+                <div class="ms-5 my-5 d-flex">
+                    <!-- Tarjeta 1 -->
+                    <div class="upCards me-5 upColorCard1"></div>
+                    <!-- Tarjeta 2 -->
+                    <div class="upCards me-5 ms-5 upColorCard2"></div>
+                    <!-- Tarjeta 3 -->
+                    <div class="upCards me-5 ms-5 upColorCard3"></div>
+                </div>
+
+                <!-- Esdísticas -->
+                <div class="afacad-Medium d-flex row align-items-center justify-content-center ms-5">
+                    <!-- Encabezado -->
+                    <div class="p-0 d-flex justify-content-between align-items-center">
+                        <h6 class="afacad-Bold mb-0">Estadísticas de visitante</h6>
+                        <ul class="d-flex m-0 d-flex justify-content-end">
+                            <div>
+                                <li class="pe-5">Últimos 6 meses</li>
+                            </div>
+                            <div>
+                                <li class="pe-5 me-3">Antes</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="p-0 d-flex justify-content-between align-items-center">
+                        <h6 class="afacad-Bold mb-0">Seleccione mes</h6>
+                        <div class="d-flex m-0 d-flex justify-content-end">
+                            <h6>0</h6>
+                            <h6>0</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="Assets/js/bootstrap_js/bootstrap.min.js"></script>
 </body>
+
 </html>

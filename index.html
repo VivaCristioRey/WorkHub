@@ -13,67 +13,62 @@
 <body>
 
     <!-- Encabezado -->
-    <header class="shadow-sm sticky-top" id="">
-        <nav class="container-fluid d-flex align-items-center justify-content-between py-3">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">
-                    <img src="Assets/img/W.png" alt="WorkHubLogo">
-                </a>
-            </div>
-
-            <div class="d-flex">
-                <!-- Navegación -->
-                <ul class="nav me-5">
-                    <li class="nav-item"><a href="#" class="nav-link text-dark fs-5">Cómo funciona</a>
-                    </li>
-                    <li class="nav-item"><a href="#" class="nav-link text-dark fs-5">Buscar Oferta</a>
-                    </li>
-                    <li class="nav-item"><a href="#footer" class="nav-link text-dark fs-5">Contacto</a>
-                    </li>
+    <header class="shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg bg-white container-fluid px-3">
+            <a class="navbar-brand" href="#">
+                <img src="Assets/img/W.png" alt="WorkHubLogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link text-dark fs-5">Cómo funciona</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-dark fs-5">Buscar Oferta</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link text-dark fs-5">Contacto</a></li>
                 </ul>
-
-                <!-- Botones -->
-                <div class="ms-5">
+                <div class="d-flex">
                     <a href="#" class="btn btn-outline-primary me-2" id="register">Registrar</a>
-                    <a href="#" class="btn btn-warning text-white border-0" id="logIn">Iniciar Sesión</a>
+                    <a href="#" class="btn btn-warning text-white border-0 focus-ring" id="logIn">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
-
         <!-- Modal Inicio Sesión -->
-        <dialog  id="modalLogin" closedby="any">
+        <dialog id="modalLogin" closedby="any">
             <div class="d-flex justify-content-center ctn-main mc-color">
                 <div class="d-flex align-items-center justify-content-center ctn-body flex-column px-3 rubik-regular">
                     <h1 class="rubik-semiBold mb-5">Iniciar Sesión</h1>
                     <!-- Información -->
                     <form class="d-flex flex-column w-100 mb-3">
-                        <input type="email" id="emailUsr" class="form-control border-0 mb-3 border-bottom" placeholder="Email">
-                        <input type="password" id="passUsr" class="form-control border-0 border-bottom" placeholder="Contraseña">
+                        <input type="email" id="emailUsr" class="form-control border-0 mb-3 border-bottom"
+                            placeholder="Email">
+                        <input type="password" id="passUsr" class="form-control border-0 border-bottom"
+                            placeholder="Contraseña">
                     </form>
-        
+
                     <!-- Recordar Contraseña -->
                     <div class="d-flex w-100 p-0 mb-3">
                         <h6 class="me-3 m-0">Recordar contraseña</h6>
                         <input type="checkbox">
                     </div>
-        
+
                     <!-- Botón Iniciar Sesión -->
                     <button class="btn-logIn fs-5 w-100 btn btn-warning border-0" id="sendLogIn">Iniciar Sesión</button>
-        
+
                     <!-- O con -->
                     <div class="d-flex my-3 w-100 align-items-center p-0">
                         <hr class="flex-grow-1 border-secondary">
                         <span class="mx-2 small">O CON</span>
                         <hr class="flex-grow-1 border-secondary">
                     </div>
-        
+
                     <!-- Continuar con Google -->
                     <div class="w-100 mb-3">
-                        <button class="btn btn-google btn-outline-primary w-100 p-0 align-items-center justify-content-center border-white d-flex">
+                        <button
+                            class="btn btn-google btn-outline-primary w-100 p-0 align-items-center justify-content-center border-white d-flex">
                             <img src="Assets/icons/Google.svg" class="me-3" alt="Google">Continuar con Google</button>
                     </div>
-        
+
                     <!-- Crear cuenta/Olvidé Contra -->
                     <div class="d-flex justify-content-between w-100">
                         <a href="#" class="text-color_skyBlue">Crear cuenta</a>
@@ -82,7 +77,6 @@
                 </div>
             </div>
         </dialog>
-
     </header>
 
     <!-- Principal -->
@@ -98,8 +92,7 @@
 
             <!-- Barra de búsqueda -->
             <form class="d-flex mb-4 container-fluid justify-content-center">
-                <input class="form-control w-50 me-2 afacad-regular" type="search"
-                    placeholder="Buscar cargo o categoría">
+                <input class="form-control w-50 me-2 afacad-regular focus-ring focus-ring" type="search" placeholder="Buscar cargo o categoría">
                 <button class="btn btn-warning text-white border-0 afacad-regular" type="submit">Buscar</button>
             </form>
 
@@ -180,37 +173,39 @@
         </section>
 
         <!-- Sección Información -->
-        <section class="info-size info-color">
-
-            <div class="m-0 row mt-auto justify-content-center gap-5">
+        <section class="bg-light py-5" id="info">
+            <div class="container">
+              <div class="row d-flex align-items-center justify-content-center text-center">
                 <!-- info 1 -->
-                <div class="info-cards d-flex justify-content-center align-items-center flex-column text-center">
+                <div class="col-12 col-md-4 mb-4">
+                  <div class="info-cards d-flex flex-column justify-content-center align-items-center">
                     <img src="Assets/icons/Clock.svg" class="icon-size mb-2" alt="iconClock">
-                    <h5 class="afacad-Bold text-center">Trabajos flexibles</h5>
+                    <h5 class="afacad-Bold">Trabajos flexibles</h5>
                     <h6 class="publicSans-Light">Encuentra oportunidades que se ajusten a tu horario y habilidades.</h6>
+                  </div>
                 </div>
-
                 <!-- info 2 -->
-                <div class="info-cards d-flex justify-content-center align-items-center flex-column text-center">
+                <div class="col-12 col-md-4 mb-4">
+                  <div class="info-cards d-flex flex-column justify-content-center align-items-center">
                     <img src="Assets/icons/Shield.svg" class="icon-size mb-2" alt="iconShield">
                     <h5 class="afacad-Bold">Contratación segura</h5>
                     <h6 class="publicSans-Light">Proceso de contratación rápido y seguro para empleadores.</h6>
+                  </div>
                 </div>
-
                 <!-- info 3 -->
-                <div class="info-cards d-flex justify-content-center align-items-center flex-column text-center">
+                <div class="col-12 col-md-4 mb-4">
+                  <div class="info-cards d-flex flex-column justify-content-center align-items-center">
                     <img src="Assets/icons/person.svg" class="icon-size mb-2" alt="iconPerson">
                     <h5 class="afacad-Bold">Conexiones Perfectas</h5>
                     <h6 class="publicSans-Light">Encuentra oportunidades que se ajusten a tu horario y habilidades.</h6>
+                  </div>
                 </div>
-            </div>
-
-            <!-- logos -->
-            <div class="mt-auto">
+              </div>
+              <div class="text-center mt-4 d-none d-md-block">
                 <img src="Assets/icons/Logos.svg" alt="">
+              </div>
             </div>
-
-        </section>
+          </section>
 
         <!-- Sección Trabajos -->
         <section class="bgc job-size align-items-center d-flex">
@@ -248,29 +243,24 @@
                             <img src="Assets/icons/Click.svg" alt="crearCuenta">
                             <h6 class="afacad-Medium fs-5">Crear cuenta</h6>
                         </div>
-
-
                         <!-- Tarjeta 2 -->
                         <div
                             class="start_today-card d-flex align-items-center justify-content-center flex-column gap-3">
                             <img src="Assets/icons/Book.svg" alt="completaPerfil">
                             <h6 class="afacad-Medium f-5">Completa tu perfil</h6>
                         </div>
-
                         <!-- Tarjeta 3 -->
                         <div
                             class="start_today-card d-flex align-items-center justify-content-center flex-column gap-3">
                             <img src="Assets/icons/Check.svg" alt="postulate">
                             <h6 class="afacad-Medium f-5">Postúlate a empleos</h6>
                         </div>
-
                         <!-- Tarjeta 4 -->
                         <div
                             class="start_today-card d-flex align-items-center justify-content-center flex-column gap-3">
                             <img src="Assets/icons/Cloud.svg" alt="actualiza">
                             <h6 class="afacad-Medium f-5">Actualiza tu perfil</h6>
                         </div>
-
                     </div>
                 </div>
 
@@ -278,12 +268,10 @@
                 <div class="d-flex align-items-center justify-content-center flex-column mt-5 position-relative h-100">
                     <img src="Assets/icons/Separator.svg" class="mb-5 position-absolute top-0 end-0" alt="">
                     <h1 class="text-white mt-5 mb-4 publicSans-Bold">Comienza hoy con WorkHub</h1>
-                    <h6 class="text-white mb-4 afacad-regular">Ya sea que busques trabajo o necesites contratar, WorkHub
-                        tiene la
-                        solución
+                    <h6 class="text-white mb-4 afacad-regular">Ya sea que busques trabajo o necesites contratar, WorkHub tiene la solución
                         para ti.</h6>
                     <!-- Botones -->
-                    <div class="d-flex align-items-center justify-content-center gap-3 mb-5">
+                    <div class="d-flex afacad-regular align-items-center justify-content-center gap-3 mb-5">
                         <button class="btn btn-warning text-white border-0">Publicar Oferta</button>
                         <button class="btn btn-outline-primary me-2">Busco Trabajo</button>
                     </div>
