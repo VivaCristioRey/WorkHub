@@ -65,11 +65,11 @@
 }
 
 .modal {
-    z-index: 1055 !important;
+    z-index: 1055;
 }
 
 .modal-backdrop {
-    z-index: 1050 !important;
+    z-index: 1050;
 }
 
 dialog {

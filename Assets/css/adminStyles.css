@@ -1,4 +1,4 @@
-.sideBar{
+.sideBar {
     width: 280px;
     height: calc(100vh - 64px);
 }
@@ -9,42 +9,42 @@
     transition: 0.3s ease;
 }
 
-.cards{
+.cards {
     width: 231px;
     height: 138px;
     border-radius: 10px;
 }
 
-.downCards{
+.downCards {
     height: 118px;
     width: 203.3px;
 }
 
 /* Colores */
-.lightblank{
+.lightblank {
     background-color: #EFF4F9;
 }
 
-.blankest{
+.blankest {
     background-color: #F4F8FB;
 }
 
-.greyerBlue{
+.greyerBlue {
     color: #B6B8C8;
 }
 
-.bgcStatistic{
-    background: linear-gradient(180deg,rgba(186, 194, 202, 0) 20%, rgba(186, 194, 202, 0.2) 100%);
+.bgcStatistic {
+    background: linear-gradient(180deg, rgba(186, 194, 202, 0) 20%, rgba(186, 194, 202, 0.2) 100%);
 }
 
-.pink{
+.pink {
     background-color: #FBACAC;
 }
 
-.orange{
+.orange {
     background-color: #FBE3CE;
 }
 
-.blue{
+.blue {
     background-color: #ABE5F2;
 }

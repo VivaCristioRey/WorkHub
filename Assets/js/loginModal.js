@@ -6,6 +6,13 @@ btn.addEventListener('click', () => {
     modalLogin.showModal()
 })
 
+//Cerrar modal al hacer clic fuera
+modalLogin.addEventListener('click', (event) => {
+    if (event.target === modalLogin) {
+        modalLogin.close()
+    }
+})
+
 //Validar usuario
 let adminUser = {
     correo: 'admin@usuario.com',
