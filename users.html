@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Gestión de Usuarios</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Cédula</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <!-- Usuarios -->
+                <tbody id="userTableBody" class="afacad-regular">
+                </tbody>
+            </table>
+        </div>
+        <!-- Botón Nuevo Usuario -->
+        <button class="btn btn-primary mt-3" onclick="openRegisterModal()">Registrar Usuario</button>
+        <!-- Modal -->
+        <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="userModalLabel">Registrar Usuario</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="userForm">
+                            <div class="mb-3">
+                                <label for="userId" class="form-label">ID</label>
+                                <input type="text" class="form-control" id="userId" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control afacad-regular" id="userName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userAge" class="form-label">Edad</label>
+                                <input type="number" class="form-control afacad-regular" id="userAge" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userCedula" class="form-label">Cédula</label>
+                                <input type="text" class="form-control afacad-regular" id="userCedula" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userPhone" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control afacad-regular" id="userPhone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="userAddress" class="form-label">Dirección</label>
+                                <input type="text" class="form-control afacad-regular" id="userAddress" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" onclick="saveUser()">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

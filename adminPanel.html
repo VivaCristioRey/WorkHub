@@ -12,7 +12,7 @@
 
 <body>
 
-    <header class="shadow-sm">
+    <header class="shadow-sm position-relative">
         <!-- Encabezado -->
         <nav class="navbar d-flex justify-content-between mx-3">
             <!-- Logo -->
@@ -29,74 +29,30 @@
 
     <main class="d-flex">
         <!-- Barra lateral -->
-        <div class="sideBar d-flex align-items-center justify-content-center">
-            <ul class="afacad-regular list-unstyled m-0 py-5 d-flex h-100 justify-content-center flex-column">
-                <li class="my-4">Elementos del menú</li>
-                <li class="my-4">Tareas</li>
-                <li class="my-4">Usuario</li>
-                <li class="my-4">Mensajes</li>
-                <li class="my-4">Calendario</li>
-                <li class="my-4">Publicaciones</li>
-                <li class="my-4">Contabilidad</li>
-                <li class="my-4">Reportes</li>
-                <li class="my-4">Documentos</li>
-                <li class="my-4">Nomina</li>
+        <div class="sideBar blankest d-flex align-items-center justify-content-center">
+            <ul class="afacad-regular list-unstyled m-0 py-5 d-flex h-100 w-100 justify-content-center flex-column">
+                <li class="my-4 d-flex justify-content-center"><a href="#" onclick="loadSection('statistics')" class="text-decoration-none text-dark">Estadísticas</a></li>
+                <li class="my-4 d-flex justify-content-center"><a href="#" class="text-decoration-none text-dark">Tareas</a></li>
+                <li class="my-4 d-flex justify-content-center"><a href="#" onclick="loadSection('users')"class="text-decoration-none text-dark">Usuario</a></li>
+                <li class="my-4 d-flex justify-content-center"><a href="#" class="text-decoration-none text-dark">Mensajes</a></li>
+                <li class="my-4 d-flex justify-content-center"><a href="#" class="text-decoration-none text-dark">Calendario</a></li>
+                <li class="my-4 d-flex justify-content-center"><a href="#" class="text-decoration-none text-dark">Publicaciones</a></li>
+                <li class="my-4 d-flex justify-content-center"><a href="#" class="text-decoration-none text-dark">Contabilidad</a></li>
+                <li class="my-4 d-flex justify-content-center"><a href="#" class="text-decoration-none text-dark">Reportes</a></li>
+                <li class="my-4 d-flex justify-content-center"><a href="#" class="text-decoration-none text-dark">Documentos</a></li>
+                <li class="my-4 d-flex justify-content-center"><a href="#" class="text-decoration-none text-dark">Nomina</a></li>
             </ul>
         </div>
 
-        <!-- Info -->
-        <div class="position-relative">
-            <!-- Botones superiores -->
-            <div class="m-5 afacad-regular">
-                <button class="btn btn-outline-primary me-2">
-                    Publicaciones de trabajo
-                </button>
-                <button class="btn btn-outline-primary me-2">
-                    Gestionar Usuario
-                </button>
-                <button class="btn btn-outline-primary me-2">
-                    Tablero
-                </button>
-            </div>
-            <!-- Contenedor principal -->
-            <div>
-                <!-- 3 Tarjetas de Arriba -->
-                <div class="ms-5 my-5 d-flex">
-                    <!-- Tarjeta 1 -->
-                    <div class="upCards me-5 upColorCard1"></div>
-                    <!-- Tarjeta 2 -->
-                    <div class="upCards me-5 ms-5 upColorCard2"></div>
-                    <!-- Tarjeta 3 -->
-                    <div class="upCards me-5 ms-5 upColorCard3"></div>
-                </div>
-
-                <!-- Esdísticas -->
-                <div class="afacad-Medium d-flex row align-items-center justify-content-center ms-5">
-                    <!-- Encabezado -->
-                    <div class="p-0 d-flex justify-content-between align-items-center">
-                        <h6 class="afacad-Bold mb-0">Estadísticas de visitante</h6>
-                        <ul class="d-flex m-0 d-flex justify-content-end">
-                            <div>
-                                <li class="pe-5">Últimos 6 meses</li>
-                            </div>
-                            <div>
-                                <li class="pe-5 me-3">Antes</li>
-                            </div>
-                        </ul>
-                    </div>
-                    <div class="p-0 d-flex justify-content-between align-items-center">
-                        <h6 class="afacad-Bold mb-0">Seleccione mes</h6>
-                        <div class="d-flex m-0 d-flex justify-content-end">
-                            <h6>0</h6>
-                            <h6>0</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Contenido según sección seleccionada -->
+        <div id="adminContent" class="flex-grow-1 afacad-Bold">
+            <h6 class="align-items-center justify-content-center d-flex h-100">Selecciona opción</h6>
         </div>
     </main>
 
     <script src="Assets/js/bootstrap_js/bootstrap.min.js"></script>
+    <script src="Assets/js/adminModal.js"></script>
+    <script src="Assets/js/onload.js"></script>
 </body>
 
 </html>

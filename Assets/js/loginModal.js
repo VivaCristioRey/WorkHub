@@ -1,4 +1,4 @@
-//Abrir modal
+//Modal login
 var btn = document.getElementById('logIn')
 var modalLogin = document.getElementById('modalLogin')
 

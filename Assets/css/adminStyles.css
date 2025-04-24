@@ -1,23 +1,50 @@
 .sideBar{
-    background-color: #F4F8FB;
     width: 280px;
     height: calc(100vh - 64px);
 }
 
-.upCards{
+.sideBar ul li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cards{
     width: 231px;
     height: 138px;
     border-radius: 10px;
 }
 
-.upColorCard1{
+.downCards{
+    height: 118px;
+    width: 203.3px;
+}
+
+/* Colores */
+.lightblank{
+    background-color: #EFF4F9;
+}
+
+.blankest{
+    background-color: #F4F8FB;
+}
+
+.greyerBlue{
+    color: #B6B8C8;
+}
+
+.bgcStatistic{
+    background: linear-gradient(180deg,rgba(186, 194, 202, 0) 20%, rgba(186, 194, 202, 0.2) 100%);
+}
+
+.pink{
     background-color: #FBACAC;
 }
 
-.upColorCard2{
+.orange{
     background-color: #FBE3CE;
 }
 
-.upColorCard3{
+.blue{
     background-color: #ABE5F2;
 }
